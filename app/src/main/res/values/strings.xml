@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">hello</string>
-    <string name="nombre">Pedro</string>
+    <string name="app_name">Hello</string>
+    <string name="nombre">Escribe tu nombre</string>
     <string name="aceptar">Aceptar</string>
+    <string name="title_activity_saludo">Saludos</string>
 </resources>
 

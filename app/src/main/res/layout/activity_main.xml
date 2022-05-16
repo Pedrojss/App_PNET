@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:http="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="es.uca.hello.MainActivity">
+
     <TextView
         android:id="@+id/LblNombre"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/nombre" />
+
     <EditText
         android:id="@+id/TxtNombre"
-        android:inputType="text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent" />
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <Button
         android:id="@+id/BtnAceptar"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/aceptar" />
+
+    <TextView
+        android:id="@+id/txtPrueba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hola" />
+
+    <Button
+        android:id="@+id/BtnPrueba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prueba" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
 </LinearLayout>
